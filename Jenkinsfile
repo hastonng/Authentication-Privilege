@@ -12,10 +12,8 @@ pipeline {
             steps {
                 echo "Building.."
                 sh '''
-                pip install pandas
-                pip install numpy
-                pip install openpyxl
-                pip install pyinstaller
+                cd Huawei_Authentication_Privellege_WEUDOC
+                pip install -r requirements.txt
                 '''
             }
         }
