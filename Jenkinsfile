@@ -14,6 +14,7 @@ pipeline {
                 sh '''
                 cd Huawei_Authentication_Privellege_WEUDOC
                 pip install openpyxl
+                pip install pandas
                 python3 Run.py
                 '''
             }
