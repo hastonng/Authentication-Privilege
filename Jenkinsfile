@@ -22,7 +22,6 @@ pipeline {
                 echo "Testing.."
                 sh '''
                 echo "doing test stuff.."
-                pip install pandas
 
                 '''
             }
