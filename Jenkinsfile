@@ -13,7 +13,8 @@ pipeline {
                 echo "Building.."
                 sh '''
                 cd Huawei_Authentication_Privellege_WEUDOC
-                pip install -r requirements.txt
+                
+                python3 Run.py
                 '''
             }
         }
