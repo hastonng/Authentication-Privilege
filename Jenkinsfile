@@ -1,7 +1,7 @@
 pipeline {
     agent { 
         node {
-            label 'docker-agent-python'
+            label 'docker-agent-alpine-pandas'
             }
       }
       triggers {
@@ -23,7 +23,7 @@ pipeline {
                 sh '''
                 echo "doing test stuff.."
                 pip install pandas
-                
+
                 '''
             }
         }
