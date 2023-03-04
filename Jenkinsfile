@@ -12,8 +12,6 @@ pipeline {
             steps {
                 echo "Building.."
                 sh '''
-                cd Huawei_Authentication_Privellege_WEUDOC
-                pip install openpyxl
                 '''
             }
         }
