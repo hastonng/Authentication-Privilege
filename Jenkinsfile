@@ -20,7 +20,9 @@ pipeline {
                 echo "Testing.."
                 sh '''
                 echo "doing test stuff.."
+                cd Huawei_Authentication_Privellege_WEUDOC
 
+                python3 Run.py
                 '''
             }
         }
