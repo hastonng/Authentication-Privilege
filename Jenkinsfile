@@ -1,7 +1,7 @@
 pipeline {
     agent { 
         node {
-            label 'docker-agent-python'
+            label 'docker-haston'
             }
       }
       triggers {
@@ -22,6 +22,8 @@ pipeline {
                 echo "doing test stuff.."
                 cd Huawei_Authentication_Privellege_WEUDOC
 
+                
+
                 python3 Run.py
                 '''
             }
@@ -31,6 +33,10 @@ pipeline {
                 echo 'Deliver....'
                 sh '''
                 echo "doing delivery stuff.."
+
+                echo "Building Run.exe with Pyinstaller..."
+
+                echo "Copying to directory..." 
                 '''
             }
         }
